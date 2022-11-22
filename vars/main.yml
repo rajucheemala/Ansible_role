@@ -1,0 +1,7 @@
+---
+keypair: Testing
+instance_type: t2.micro
+security_group: sg-0ebc6f12fee2101e7
+image: ami-0beaa649c482330f7
+region: us-east-1
+# vars file for provision-ec2

@@ -1,0 +1,16 @@
+---
+- name: Launch instance
+  ec2:
+    key_name: "{{ keypair }}"
+    group: "{{ security_group }}"
+    instance_type: "{{ instance_type }}"
+    image: "{{ image }}"
+    wait: true
+    region: "{{ region }}"
+    vpc_subnet_id: subnet-29e63245
+    assign_public_ip: yes
+    count: 2
+  register: ec2
+
+   
+# tasks file for provision-ec2
